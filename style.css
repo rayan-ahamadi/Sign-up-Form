@@ -1,0 +1,159 @@
+@font-face {
+  font-family: 'Norse-Bold';
+  src: url('Norse-Bold.otf') format('opentype');
+}
+
+:root{
+  --odin-font-family: 'Norse-Bold', sans-serif;
+  --background-font-color: white;
+  --background-color : white;
+  --form-box-padding: 40px;
+}
+
+html{
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+body{
+  padding: 0;
+  margin: 0;
+  background-color: var(--background-color);
+}
+
+.root{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Background box */
+
+
+.background-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 35%;
+  background-image: url("halie-west-25xggax4bSA-unsplash.jpg");
+  background-size: cover;
+  height: 100vh;
+  color: var(--background-font-color);
+}
+
+.odin-logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-family: var(--odin-font-family);
+  font-size: 2rem;
+  position: relative;
+  bottom: 8rem;
+}
+
+.odin-logo > img{
+  height: 100px;
+}
+
+.background-footer > p{
+  position: relative;
+  bottom: 0;
+  text-align: center;
+}
+
+/* Form box */
+
+.form-box{
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.form-box p{
+  max-inline-size: 55ch;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.presentation{
+  padding: var(--form-box-padding);
+}
+
+label{
+  display: flex;
+  flex-direction: column;
+}
+
+.input-box > .inputs{
+  display: flex;
+  gap: 15%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 50%;
+}
+
+.input-box {
+  padding: 20px 0;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.input-box > *{
+  padding-left: var(--form-box-padding);
+}
+
+.input-box > p{
+  margin-top: 0;
+}
+
+.inputs > label{
+  margin-bottom: 1rem;
+  font-size: 0.8rem;
+  font-weight:700;
+}
+
+input{
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #E5E7EB;
+}
+
+input:focus{ 
+  border: 2px solid blueviolet;
+}
+
+input[type="password"]:invalid{
+  border: 1px solid red;
+}
+
+input:valid{
+  border: 1px solid green;
+}
+
+.submit-box{
+  padding: var(--form-box-padding);
+}
+
+button[type="submit"]{
+  padding: 15px 60px;
+  border-radius: 7px;
+  background-color: #596D48;
+  border: none;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  color: white;
+  font-weight: bolder;
+}
+
+.submit-box > p{
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+#log-in{
+  color: #596D48;
+  font-weight: bold;
+}

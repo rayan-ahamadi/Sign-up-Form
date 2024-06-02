@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Sign up form</title>
+</head>
+<body>
+  <div class="root">
+    <div class="background-box">
+    <div class="odin-logo">
+      <img src="odin-lined.png" alt="logo TheOdinProject">
+      <h1>Odin</h1>
+    </div>
+    <div class="background-footer">
+      <p>Photo by Halie West on Unsplash</p>
+    </div>
+    </div>
+
+    <div class="form-box">
+      <div class="presentation">
+        <p>This is not a real online service! You know you need something like this in your life
+          to help you realize your deepest dreams.
+          Sign up <i>now</i> to get started
+        </p>
+        
+        <p>You <i>know</i> you want to.</p>
+      </div>
+      <form action="#" method="POST">
+        <div class="input-box">
+          <p>Let's do this!</p>
+          
+          <div class="inputs">
+            <label for="firstname">
+              FIRST NAME
+              <input type="text" name="firstname" id="firstname" placeholder="Thor" pattern="^[a-zA-Zà-ÿÀ-ß]+$" autofocus required>
+            </label>
+  
+            <label for="lastname">
+              LAST NAME
+              <input type="text" name="lastname" id="lastname" placeholder="Odinson" pattern="^[a-zA-Zà-ÿÀ-ß]+$" required>
+            </label>
+  
+            <label for="email">
+              EMAIL
+              <input type="email" name="email" id="email" placeholder="thorthegod@asgardmail.com" required>
+            </label>
+  
+            <label for="phone">
+              PHONE NUMBER
+              <input type="tel" name="phone" placeholder="0612345678" pattern="^0[1-9][0-9]{8}$" id="phone" required>
+            </label>
+  
+            <label for="password">
+              PASSWORD
+              <input type="password" name="password" id="password" placeholder="Your Password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{8,}$" required>
+            </label>
+  
+            <label for="confirmpassword">
+              CONFIRM PASSWORD
+              <input type="password" name="confirmpassword" id="confirmpassword" placeholder="Confirm The Password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{8,}$" required>
+            </label>
+          </div>
+        </div>
+
+        <div class="submit-box">
+          <button type="submit">Create Account</button>
+          <p>Already have an account? <span id="log-in">Log in</span></p>
+        </div>
+      </form>
+    </div>
+  </div>
+  
+
+</body>
+</html>
